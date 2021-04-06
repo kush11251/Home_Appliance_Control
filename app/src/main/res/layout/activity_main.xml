@@ -78,6 +78,7 @@
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
                 android:text="   Fan"
+                android:textAllCaps="true"
                 android:textSize="20sp" />
 
             <Switch
