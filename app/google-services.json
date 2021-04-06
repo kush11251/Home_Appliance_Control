@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "536813082995",
+    "project_id": "home-appliance-control-kush",
+    "storage_bucket": "home-appliance-control-kush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536813082995:android:13aa618c986a669d808d06",
+        "android_client_info": {
+          "package_name": "com.example.homeappliancecontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536813082995-2m0ftee22jp636nif4rb298r48uielmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe8HzxYrh66rlSLyAbca7fhn4oh8hfrl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536813082995-2m0ftee22jp636nif4rb298r48uielmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
