@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Switch;
 
 import com.google.firebase.database.DatabaseReference;
@@ -34,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         S6     = findViewById(R.id.switch6);
         S7     = findViewById(R.id.switch7);
         S8     = findViewById(R.id.switch8);
-        button = findViewById(R.id.button);
-        button1= findViewById(R.id.button2);
+        button = findViewById(R.id.reset);
+        button1= findViewById(R.id.set);
 
         databaseReference = mdatabase.getInstance().getReference();
 
