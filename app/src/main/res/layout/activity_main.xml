@@ -35,10 +35,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Study Light"
-                android:textSize="24sp" />
+                android:text="   Study Light"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch2"
@@ -46,10 +48,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Secondary Light 1"
-                android:textSize="24sp" />
+                android:text="   Secondary Light 1"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch3"
@@ -57,10 +61,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Balcony Light"
-                android:textSize="24sp" />
+                android:text="   Balcony Light"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch4"
@@ -68,10 +74,11 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Fan"
-                android:textSize="24sp" />
+                android:text="   Fan"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch5"
@@ -79,10 +86,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Extra Switch 1"
-                android:textSize="24sp" />
+                android:text="   Extra Switch 1"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch6"
@@ -90,10 +99,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Extra Switch 2"
-                android:textSize="24sp" />
+                android:text="   Extra Switch 2"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch7"
@@ -101,10 +112,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Speaker"
-                android:textSize="24sp" />
+                android:text="   Speaker"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <Switch
                 android:id="@+id/switch8"
@@ -112,10 +125,12 @@
                 android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/carter_one"
+                android:background="@drawable/switchback"
+                android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="Misc"
-                android:textSize="24sp" />
+                android:text="   Misc"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
