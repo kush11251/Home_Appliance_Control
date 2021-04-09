@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B1 = S1.isChecked() ? 1 : 0;
                 state.B1 = B1;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B2 = S2.isChecked() ? 1 : 0;
                 state.B2 = B2;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B3 = S3.isChecked() ? 1 : 0;
                 state.B3 = B3;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B4 = S4.isChecked() ? 1 : 0;
                 state.B4 = B4;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B5 = S5.isChecked() ? 1 : 0;
                 state.B5 = B5;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B6 = S6.isChecked() ? 1 : 0;
                 state.B6 = B6;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B7 = S7.isChecked() ? 1 : 0;
                 state.B7 = B7;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 B8 = S8.isChecked() ? 1 : 0;
                 state.B8 = B8;
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 S6.setChecked(false);
                 S7.setChecked(false);
                 S8.setChecked(false);
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
 
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 B8 = S8.isChecked() ? 1 : 0;
 
                 state = new ButtonState(B1,B2,B3,B4,B5,B6,B7,B8);
-                databaseReference.child("Button State").setValue(state);
+                databaseReference.setValue(state);
             }
         });
     }
