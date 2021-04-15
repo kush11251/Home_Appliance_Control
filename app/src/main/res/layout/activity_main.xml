@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/layout_new_1"
     tools:context=".MainActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="250dp"
         android:fadeScrollbars="false"
         android:isScrollContainer="false"
         android:nestedScrollingEnabled="false"
@@ -34,11 +34,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Study Light"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -47,11 +50,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:text="   Secondary Light 1"
+                android:paddingBottom="10dp"
+                android:text="   Secondary Light"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -60,11 +66,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Balcony Light"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -73,11 +82,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Fan"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -86,11 +98,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   UPS"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -99,11 +114,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Speaker"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -112,11 +130,14 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Lights Over"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
@@ -125,18 +146,21 @@
                 android:layout_width="300dp"
                 android:layout_height="37dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/switchback"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
+                android:paddingBottom="10dp"
                 android:text="   Misc"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -146,7 +170,11 @@
                     android:layout_height="35dp"
                     android:layout_gravity="fill"
                     android:layout_marginEnd="10dp"
-                    android:background="@drawable/setbutton" />
+                    android:background="@drawable/set_button_new"
+                    android:paddingBottom="10dp"
+                    android:text="SET"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/reset"
@@ -154,22 +182,15 @@
                     android:layout_height="35dp"
                     android:layout_gravity="fill"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/resetbutton" />
+                    android:background="@drawable/reset_button_new"
+                    android:paddingBottom="10dp"
+                    android:text="reset"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
