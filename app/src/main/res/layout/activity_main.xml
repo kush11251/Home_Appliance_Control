@@ -169,10 +169,22 @@
                     android:layout_width="100dp"
                     android:layout_height="35dp"
                     android:layout_gravity="fill"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="0dp"
                     android:background="@drawable/set_button_new"
                     android:paddingBottom="10dp"
                     android:text="SET"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/get"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="fill"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/get_button_new"
+                    android:paddingBottom="10dp"
+                    android:text="GET"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -181,7 +193,7 @@
                     android:layout_width="100dp"
                     android:layout_height="35dp"
                     android:layout_gravity="fill"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="0dp"
                     android:background="@drawable/reset_button_new"
                     android:paddingBottom="10dp"
                     android:text="reset"

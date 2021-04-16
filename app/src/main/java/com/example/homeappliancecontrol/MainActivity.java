@@ -1,23 +1,29 @@
 package com.example.homeappliancecontrol;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
     Switch S1,S2,S3,S4,S5,S6,S7,S8;
-    Button button,button1;
+    Button setButton,getButton,resetButton;
     FirebaseDatabase mdatabase = FirebaseDatabase.getInstance();
     DatabaseReference databaseReference;
 
     Integer B1,B2,B3,B4,B5,B6,B7,B8;
+    Integer X1,X2,X3,X4,X5,X6,X7,X8;
     ButtonState state = new ButtonState(0,0,0,0,0,0,0,0);
 
     @Override
@@ -33,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
         S6     = findViewById(R.id.switch6);
         S7     = findViewById(R.id.switch7);
         S8     = findViewById(R.id.switch8);
-        button = findViewById(R.id.reset);
-        button1= findViewById(R.id.set);
+        setButton = findViewById(R.id.reset);
+        getButton = findViewById(R.id.get);
+        resetButton= findViewById(R.id.set);
 
         databaseReference = mdatabase.getInstance().getReference();
 
@@ -110,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        setButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 state = new ButtonState(0,0,0,0,0,0,0,0);
@@ -126,7 +133,72 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        getButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        ButtonState state_get = snapshot.getValue(ButtonState.class);
+                        state.B1 = state_get.B1;
+                        state.B2 = state_get.B2;
+                        state.B3 = state_get.B3;
+                        state.B4 = state_get.B4;
+                        state.B5 = state_get.B5;
+                        state.B6 = state_get.B6;
+                        state.B7 = state_get.B7;
+                        state.B8 = state_get.B8;
+
+                        if (state.B1 == 1)
+                            S1.setChecked(true);
+                        else
+                            S1.setChecked(false);
+
+                        if (state.B2 == 1)
+                            S2.setChecked(true);
+                        else
+                            S2.setChecked(false);
+
+                        if (state.B3 == 1)
+                            S3.setChecked(true);
+                        else
+                            S3.setChecked(false);
+
+                        if (state.B4 == 1)
+                            S4.setChecked(true);
+                        else
+                            S4.setChecked(false);
+
+                        if (state.B5 == 1)
+                            S5.setChecked(true);
+                        else
+                            S5.setChecked(false);
+
+                        if (state.B6 == 1)
+                            S6.setChecked(true);
+                        else
+                            S6.setChecked(false);
+
+                        if (state.B7 == 1)
+                            S7.setChecked(true);
+                        else
+                            S7.setChecked(false);
+
+                        if (state.B8 == 1)
+                            S8.setChecked(true);
+                        else
+                            S8.setChecked(false);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(getApplicationContext(),"Error Fetching Data" + error.toString(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+        resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 B1 = S1.isChecked() ? 1 : 0;
