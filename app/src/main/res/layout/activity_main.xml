@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +11,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:fadeScrollbars="false"
         android:isScrollContainer="false"
@@ -38,12 +39,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Study Light"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/study_light"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch2"
@@ -54,12 +57,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Secondary Light"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/secondary_light"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch3"
@@ -70,12 +75,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Balcony Light"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/balcony_light"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch4"
@@ -86,12 +93,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Fan"
+                android:paddingHorizontal="15sp"
+                android:paddingBottom="10sp"
+                android:text="@string/fan"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch5"
@@ -102,12 +111,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   UPS"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/ups"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch6"
@@ -118,12 +129,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Speaker"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/speaker"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch7"
@@ -134,12 +147,14 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Lights Over"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/lights_over"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
             <Switch
                 android:id="@+id/switch8"
@@ -150,12 +165,15 @@
                 android:background="@drawable/switch_button_new"
                 android:fontFamily="sans-serif"
                 android:gravity="fill"
-                android:paddingBottom="10dp"
-                android:text="   Misc"
+                android:paddingBottom="10sp"
+                android:paddingHorizontal="15sp"
+                android:text="@string/misc"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -172,7 +190,7 @@
                     android:layout_marginEnd="0dp"
                     android:background="@drawable/set_button_new"
                     android:paddingBottom="10dp"
-                    android:text="SET"
+                    android:text="@string/set_button"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -184,7 +202,7 @@
                     android:layout_marginEnd="0dp"
                     android:background="@drawable/get_button_new"
                     android:paddingBottom="10dp"
-                    android:text="GET"
+                    android:text="@string/get_button"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -196,7 +214,7 @@
                     android:layout_marginStart="0dp"
                     android:background="@drawable/reset_button_new"
                     android:paddingBottom="10dp"
-                    android:text="reset"
+                    android:text="@string/reset_button"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -205,4 +223,4 @@
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
